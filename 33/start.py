@@ -21,7 +21,9 @@ entry = t.Entry(window,bg="#E4A570",font=('微软雅黑',20),width=15)
 entry.place(x=86,y=50)
 # 查找函数
 def search():
-    pass
+    # 获取输入框的输入信息
+    name = entry.get()
+    print('您要查询的书名/作者为：' + name)
 
 # 查找按钮
 searchImg = ImageTk.PhotoImage(file = 'images/查找.png')
