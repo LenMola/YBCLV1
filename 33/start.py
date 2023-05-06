@@ -26,7 +26,7 @@ def search():
 # 查找按钮
 searchImg = ImageTk.PhotoImage(file = 'images/查找.png')
 s = t.Button(window,image=searchImg,text='查找',font=('微软雅黑',15),
-             compound='center',bd=0,cursor="star",command=search)
+             compound='center',bd=0,cursor="hand2",command=search)
 
 
 s.place(x = 356,y = 47)
