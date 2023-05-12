@@ -24,6 +24,15 @@ def search():
     # 获取输入框的输入信息
     name = entry.get()
     print('您要查询的书名/作者为：' + name)
+    # 获取所有的书籍文件名
+    novels = os.listdir('novel')
+    result = []
+    for novel in novels:
+        if name in novel:
+            print('猜您想看：' + novel)
+            result.append(novel)
+    if result == []:
+        print('未查询到相关书籍！')
 # 查找按钮
 searchImg = ImageTk.PhotoImage(file = 'images/查找.png')
 s = t.Button(window,image=searchImg,text='查找',font=('微软雅黑',15),
