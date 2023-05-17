@@ -70,7 +70,10 @@ def search():
                 x = 50
         window.mainloop()
 # 阅读指定书籍
-
+def show(name):
+    print('正在阅读：'+name)
+    # 跳转阅读程序：show.py
+    os.system('python show.py '+name)
 # 重置界面
 def update():
     global window,bgImg,bg,entry,searchImg,s
