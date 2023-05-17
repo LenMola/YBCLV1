@@ -33,6 +33,19 @@ def search():
             result.append(novel)
     if result == []:
         print('未查询到相关书籍！')
+    else:
+        pass
+        # 在查询到的书籍文件名中分隔出书名
+        # 1.创建新列表存储所有书名
+        names = []
+        for r in result:
+            names.append(r.split('-')[0])
+        print(names)
+        # 创建书籍按钮
+        book = ImageTk.PhotoImage(file = 'images/')
+        book = t.Button(window,bd=0,image=)
+
+
 # 查找按钮
 searchImg = ImageTk.PhotoImage(file = 'images/查找.png')
 s = t.Button(window,image=searchImg,text='查找',font=('微软雅黑',15),
