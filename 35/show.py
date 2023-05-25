@@ -35,3 +35,4 @@ bg.pack()
 
 
 window.mainloop()
+os.system('python start.py')
